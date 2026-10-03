@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mickey Mouse | A Magical Adventure</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">🐭 Mickey & Friends</a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNavigation"
+                aria-controls="mainNavigation" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavigation">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#characters">Characters</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mickey-story">Story</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#magic">Magic</a></li>
+                </ul>
+
+                <a href="#characters" class="btn btn-mickey ms-lg-3">
+                    Start Adventure
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section id="home" class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <p class="eyebrow">★ WELCOME TO MICKEY'S WORLD ★</p>
+
+                <h1>
+                    A world of
+                    <span>fun & magic.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Step into a colorful world filled with friendship,
+                    laughter, adventure, imagination, and unforgettable
+                    Disney characters.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#characters" class="btn btn-mickey btn-lg">
+                        Meet the Characters
+                    </a>
+
+                    <a href="#mickey-story" class="btn btn-outline-light btn-lg">
+                        Our Story
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- CHARACTERS -->
+<section id="characters" class="character-section">
+
+    <div class="section-heading text-center px-3">
+        <p class="eyebrow dark">★ MICKEY & FRIENDS ★</p>
+        <h2>Meet the Characters</h2>
+        <p>
+            Discover the fun-loving characters who bring friendship,
+            laughter, and adventure to Mickey's world.
+        </p>
+    </div>
+
+    <div id="characterCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#characterCarousel"
+                data-bs-slide-to="0" class="active" aria-label="Mickey"></button>
+            <button type="button" data-bs-target="#characterCarousel"
+                data-bs-slide-to="1" aria-label="Minnie"></button>
+            <button type="button" data-bs-target="#characterCarousel"
+                data-bs-slide-to="2" aria-label="Donald"></button>
+            <button type="button" data-bs-target="#characterCarousel"
+                data-bs-slide-to="3" aria-label="Daisy"></button>
+            <button type="button" data-bs-target="#characterCarousel"
+                data-bs-slide-to="4" aria-label="Goofy"></button>
+            <button type="button" data-bs-target="#characterCarousel"
+                data-bs-slide-to="5" aria-label="Pluto"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+            <!-- MICKEY -->
+            <div class="carousel-item active">
+                <img src="https://wallpaperaccess.com/full/1367530.jpg"
+                    class="d-block w-100" alt="Mickey Mouse">
+
+                <div class="carousel-caption">
+                    <span class="character-number">01</span>
+                    <h3>Mickey Mouse</h3>
+                    <p>
+                        A cheerful and adventurous mouse who loves
+                        making friends and bringing happiness to everyone.
+                    </p>
+                    <a href="#mickey-card" class="btn btn-light">
+                        Discover His Story
+                    </a>
+                </div>
+            </div>
+
+            <!-- MINNIE -->
+            <div class="carousel-item">
+                <img src="https://th.bing.com/th/id/R.4588b77b8ad985eb720112739d3616b6?rik=iyABy%2fx%2fQCu67g&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fc2nXLSH.jpg&ehk=l3t9OPIn5ztY8iWDw6yOL1mrXMf0FCsywaIRMg5A7ro%3d&risl=&pid=ImgRaw&r=0"
+                    class="d-block w-100" alt="Minnie Mouse">
+
+                <div class="carousel-caption">
+                    <span class="character-number">02</span>
+                    <h3>Minnie Mouse</h3>
+                    <p>
+                        A sweet, stylish, and caring friend who loves
+                        music, dancing, and spending time with Mickey.
+                    </p>
+                    <a href="#minnie-card" class="btn btn-light">
+                        Discover Her Story
+                    </a>
+                </div>
+            </div>
+
+            <!-- DONALD -->
+            <div class="carousel-item">
+                <img src="https://wallpapers.com/images/featured/donald-duck-e6d12sw2wramsnhr.jpg"
+                    class="d-block w-100" alt="Donald Duck">
+
+                <div class="carousel-caption">
+                    <span class="character-number">03</span>
+                    <h3>Donald Duck</h3>
+                    <p>
+                        A funny and energetic duck who cares deeply
+                        for his friends despite his quick temper.
+                    </p>
+                    <a href="#donald-card" class="btn btn-light">
+                        Discover His Story
+                    </a>
+                </div>
+            </div>
+
+            <!-- DAISY -->
+            <div class="carousel-item">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12d64890-57c1-4085-9946-62c47d06b659/dfgze2n-f7da535c-fa97-4df5-ac59-ce0ca22bc969.jpg/v1/fill/w_1192,h_670,q_70,strp/classic_webby_1_by_rositavanderquack_dfgze2n-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcLzEyZDY0ODkwLTU3YzEtNDA4NS05OTQ2LTYyYzQ3ZDA2YjY1OVwvZGZnemUybi1mN2RhNTM1Yy1mYTk3LTRkZjUtYWM1OS1jZTBjYTIyYmM5NjkuanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.j7btOqu66WvQEaFqsZO-Y1pI1XarwBEUIRL4xBgMHDQ"
+                    class="d-block w-100" alt="Daisy Duck">
+
+                <div class="carousel-caption">
+                    <span class="character-number">04</span>
+                    <h3>Daisy Duck</h3>
+                    <p>
+                        A confident, stylish, and caring duck who
+                        enjoys spending time with her friends.
+                    </p>
+                    <a href="#daisy-card" class="btn btn-light">
+                        Discover Her Story
+                    </a>
+                </div>
+            </div>
+
+            <!-- GOOFY -->
+            <div class="carousel-item">
+                <img src="https://wallpapercave.com/wp/3dzzgMJ.jpg"
+                    class="d-block w-100" alt="Goofy">
+
+                <div class="carousel-caption">
+                    <span class="character-number">05</span>
+                    <h3>Goofy</h3>
+                    <p>
+                        A kind-hearted and funny friend who brings
+                        laughter wherever he goes.
+                    </p>
+                    <a href="#goofy-card" class="btn btn-light">
+                        Discover His Story
+                    </a>
+                </div>
+            </div>
+
+            <!-- PLUTO -->
+            <div class="carousel-item">
+                <img src="https://wallpaperaccess.com/full/2453402.jpg"
+                    class="d-block w-100" alt="Pluto">
+
+                <div class="carousel-caption">
+                    <span class="character-number">06</span>
+                    <h3>Pluto</h3>
+                    <p>
+                        Mickey's loyal and playful dog who loves
+                        adventures and spending time with friends.
+                    </p>
+                    <a href="#pluto-card" class="btn btn-light">
+                        Discover His Story
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+            data-bs-target="#characterCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+            data-bs-target="#characterCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+
+<!-- CHARACTER STORIES -->
+<section class="character-stories">
+
+    <div class="section-heading text-center px-3">
+        <p class="eyebrow dark">★ CHARACTER STORIES ★</p>
+        <h2>Their Stories</h2>
+        <p>
+            Learn more about the characters who make
+            Mickey's world fun and unforgettable.
+        </p>
+    </div>
+
+    <div class="row g-4 px-3">
+
+        <div class="col-lg-6" id="mickey-card">
+            <article class="character-card">
+                <img src="https://www.pixelstalk.net/wp-content/uploads/2016/01/Disney-Mickey-Mouse-Cartoon-Wallpaper.jpg"
+                    alt="Mickey Mouse">
+
+                <div class="character-card-body">
+                    <span class="character-number">01 · THE LEADER</span>
+                    <h3>Mickey Mouse</h3>
+                    <p>
+                        Mickey is a cheerful and adventurous character
+                        who loves trying new things. He is known for
+                        his optimistic personality and strong friendships.
+                    </p>
+                    <a href="#characters" class="btn btn-mickey">
+                        Back to Characters
+                    </a>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-lg-6" id="minnie-card">
+            <article class="character-card">
+                <img src="https://i.etsystatic.com/42415510/r/il/915af2/5742298597/il_1080xN.5742298597_7cel.jpg"
+                    alt="Minnie Mouse">
+
+                <div class="character-card-body">
+                    <span class="character-number">02 · THE SWEET FRIEND</span>
+                    <h3>Minnie Mouse</h3>
+                    <p>
+                        Minnie is sweet, stylish, and caring. She enjoys
+                        dancing and singing and always makes her friends
+                        feel special.
+                    </p>
+                    <a href="#characters" class="btn btn-mickey">
+                        Back to Characters
+                    </a>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-lg-6" id="donald-card">
+            <article class="character-card">
+                <img src="https://wallpapercave.com/wp/wp4069606.jpg"
+                    alt="Donald Duck">
+
+                <div class="character-card-body">
+                    <span class="character-number">03 · THE FUNNY FRIEND</span>
+                    <h3>Donald Duck</h3>
+                    <p>
+                        Donald is energetic, funny, and sometimes
+                        quick-tempered. Despite his frustrations,
+                        he has a caring heart and loves his friends.
+                    </p>
+                    <a href="#characters" class="btn btn-mickey">
+                        Back to Characters
+                    </a>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-lg-6" id="daisy-card">
+            <article class="character-card">
+                <img src="https://wallpaperbat.com/img/8600312-daisy-duck.jpg"
+                    alt="Daisy Duck">
+
+                <div class="character-card-body">
+                    <span class="character-number">04 · THE STYLISH FRIEND</span>
+                    <h3>Daisy Duck</h3>
+                    <p>
+                        Daisy is confident, stylish, and caring.
+                        She enjoys spending time with her friends
+                        and is known for her cheerful personality.
+                    </p>
+                    <a href="#characters" class="btn btn-mickey">
+                        Back to Characters
+                    </a>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-lg-6" id="goofy-card">
+            <article class="character-card">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.98Jbtz4rT5z01TKniWjiKwHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Goofy">
+
+                <div class="character-card-body">
+                    <span class="character-number">05 · THE FUNNY PAL</span>
+                    <h3>Goofy</h3>
+                    <p>
+                        Goofy is a good-natured and funny character.
+                        Although he can be clumsy, he always tries
+                        his best and brings laughter to his friends.
+                    </p>
+                    <a href="#characters" class="btn btn-mickey">
+                        Back to Characters
+                    </a>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-lg-6" id="pluto-card">
+            <article class="character-card">
+                <img src="https://wallpapers.com/images/hd/disney-mickey-pet-pluto-oyhj16ky8dkultrr.jpg"
+                    alt="Pluto">
+
+                <div class="character-card-body">
+                    <span class="character-number">06 · THE LOYAL FRIEND</span>
+                    <h3>Pluto</h3>
+                    <p>
+                        Pluto is Mickey's loyal and playful dog.
+                        He loves adventures, playing around,
+                        and spending time with his friends.
+                    </p>
+                    <a href="#characters" class="btn btn-mickey">
+                        Back to Characters
+                    </a>
+                </div>
+            </article>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- NEW BONGGA STORY SECTION -->
+<section id="mickey-story" class="story-section">
+
+    <div class="story-decoration story-circle-1"></div>
+    <div class="story-decoration story-circle-2"></div>
+
+    <div class="container">
+
+        <div class="story-title text-center">
+            <span class="story-label">★ THE STORY BEHIND MICKEY ★</span>
+
+            <h2>
+                From a little mouse
+                <span>to a world of magic.</span>
+            </h2>
+
+            <p>
+                A timeless character, unforgettable adventures,
+                and a story that continues to bring people together.
+            </p>
+        </div>
+
+        <div class="row align-items-center g-5 story-content">
+
+            <!-- MAIN CARD -->
+            <div class="col-lg-5">
+                <div class="story-main-card">
+
+                    <div class="story-mickey-icon">
+                        <i class="bi bi-stars"></i>
+                    </div>
+
+                    <span class="story-year">1928</span>
+
+                    <h3>
+                        Where the magic
+                        <span>began.</span>
+                    </h3>
+
+                    <p>
+                        Mickey Mouse made his debut in 1928 and quickly
+                        became one of Disney's most recognizable characters.
+                        His cheerful personality, adventurous spirit,
+                        and love for friendship made him unforgettable.
+                    </p>
+
+                    <div class="story-line"></div>
+
+                    <div class="story-mini-info">
+                        <i class="bi bi-film"></i>
+                        <div>
+                            <strong>Mickey's Debut</strong>
+                            <small>A character loved across generations.</small>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- TIMELINE -->
+            <div class="col-lg-7">
+                <div class="story-timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="bi bi-film"></i>
+                        </div>
+
+                        <div class="timeline-card">
+                            <span>01 · THE BEGINNING</span>
+                            <h4>A Star Was Born</h4>
+                            <p>
+                                Mickey first appeared in 1928 and began
+                                a journey that would make him one of the
+                                world's most recognizable cartoon characters.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+
+                        <div class="timeline-card">
+                            <span>02 · FRIENDSHIP</span>
+                            <h4>Mickey & His Friends</h4>
+                            <p>
+                                Minnie, Donald, Daisy, Goofy, and Pluto
+                                became important parts of Mickey's world,
+                                creating stories filled with friendship
+                                and laughter.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="bi bi-stars"></i>
+                        </div>
+
+                        <div class="timeline-card">
+                            <span>03 · THE MAGIC</span>
+                            <h4>A World of Adventure</h4>
+                            <p>
+                                Through cartoons, movies, shows, and
+                                Disney experiences, Mickey's adventures
+                                continue to inspire imagination.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- QUOTE -->
+        <div class="story-bottom">
+
+            <div class="story-bottom-icon">
+                <i class="bi bi-heart-fill"></i>
+            </div>
+
+            <div>
+                <strong>
+                    "Friendship makes every adventure magical."
+                </strong>
+
+                <p>
+                    Fun, friendship, imagination, and adventure
+                    are at the heart of Mickey's world.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- MAGIC -->
+<section id="magic" class="magic-section">
+
+    <div class="container">
+        <div class="row align-items-center g-4">
+
+            <div class="col-lg-5">
+                <p class="eyebrow">★ DISCOVER THE MAGIC ★</p>
+
+                <h2>A world full of fun.</h2>
+
+                <p>
+                    Explore a colorful world where every day
+                    brings friendship, laughter, imagination,
+                    and a new adventure.
+                </p>
+
+                <a href="#home" class="btn btn-light">
+                    Back to the Beginning
+                </a>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="row g-3">
+
+                    <div class="col-md-4">
+                        <article class="magic-card">
+                            <i class="bi bi-emoji-smile-fill"></i>
+                            <h3>Fun</h3>
+                            <p>
+                                Every adventure is filled with
+                                laughter and exciting moments.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="col-md-4">
+                        <article class="magic-card">
+                            <i class="bi bi-heart-fill"></i>
+                            <h3>Friendship</h3>
+                            <p>
+                                Good friends make every adventure
+                                more memorable.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="col-md-4">
+                        <article class="magic-card">
+                            <i class="bi bi-stars"></i>
+                            <h3>Adventure</h3>
+                            <p>
+                                Every journey brings something
+                                new to discover.
+                            </p>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- CTA -->
+<section class="cta-section">
+    <div class="container text-center">
+
+        <p class="eyebrow">★ YOUR ADVENTURE AWAITS ★</p>
+
+        <h2>Oh boy, let's go!</h2>
+
+        <p>
+            Every great adventure begins with a little imagination.
+        </p>
+
+        <a href="#home" class="btn btn-light btn-lg">
+            <i class="bi bi-stars"></i>
+            Explore Again
+        </a>
+
+    </div>
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-md-6">
+                <p class="mb-md-0">
+                    © 2026 Mickey Mouse | A Magical Adventure
+                </p>
+            </div>
+
+            <div class="col-md-6 text-md-end">
+                <a href="#home">Home</a>
+                <a href="#characters">Characters</a>
+                <a href="#mickey-story">Story</a>
+                <a href="#magic">Magic</a>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
